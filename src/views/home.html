@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Formulario</title>
+	</head>
+	<body>
+		<header><h1>formulario de registro</h1></header>
+		<form class="formulario" action="/add" method="POST" >
+			<h2 style="color: rgb(190, 23, 23) ;">Tener en cuenta que todos los campos son requeridos</h2>
+			<br>
+			<div class="infoUser">
+				<h3>informacion usuario</h3>
+				<label for="apellido">Apellido<span>(requerido)</span></label>
+				<input type="text" id="apellido" name="apellido" class="apellido" />
+
+				<label for="Nombre">Nombre<span>(requerido)</span></label>
+				<input type="text" id="Nombre" name="nombre" class="Nombre" />
+
+				<label for="contraseña">contraseña<span>(requerido)</span></label>
+				<input type="password" class="contraseña" id="contraseña" name="contraseña" />
+
+				<label for="email">correo<span>(requerido)</span></label>
+				<input type="email" name="email" id="email" class="email" />
+
+				<label for="emailVerified">repetir correo<span>(requerido)</span></label>
+				<input type="email" class="emailVerified" id="emailVerified" name="emailVerified" />
+
+				<h4>¿Es usted militar? <span>(requerido)</span></h4>
+				<div class="seleccionMilitar">
+					<label style="color: rgb(188, 188, 188)" for="militar">Si</label>
+					<input type="radio" name="militar" id="militar" value="si" />
+					<label style="color: rgb(188, 188, 188)" for="NoMilitar">No</label>
+					<input type="radio" name="militar" id="NoMilitar" value="no" />
+				</div>
+				<div class="seleccionTemporal">
+					<h4>En caso de usted ser militar, ¿Es usted temporal?<span>(requerido)</span></h4>
+					<label style="color: rgb(188, 188, 188)" for="temporal">Si</label>
+					<input type="radio" name="temporal" id="SiTemporal" value="si" />
+					<label style="color: rgb(188, 188, 188)" for="noTemporal">No</label>
+					<input type="radio" name="temporal" id="NoTemporal" value="no" />
+				</div>
+			</div>
+			<div class="documento">
+				<h3>documento identidad</h3>
+				<label for="tipoDocumento">Tipo de documento<span>(requerido)</span></label>
+				<select name="tipoDocumento" id="tipoDocumento">
+					<option value="cedula">cedula de ciudadania</option>
+					<option value="pasaporte">Pasaporte</option>
+					<option value="dni">DNI</option>
+				</select>
+
+				<label for="numeroDocumento">Numero de documento<span>(requerido)</span></label>
+				<input type="text" id="numeroDocumento" name="numeroDocumento" />
+
+				<label for="lugarExpedicion">lugar de expedicion<span>(requerido)</span></label>
+				<input type="text" name="lugarExpedicion" id="lugarExpedicion" class="lugarExpedicion" />
+
+				<label for="fechaExpedicion">fecha de expedicion<span>(requerido)</span></label>
+				<input type="date" name="fechaExpedicion" id="fechaExpedicion" class="fechaExpedicion" max="2022-12-31" />
+			</div>
+
+			<div class="contacto">
+				<h3>Registro de contacto</h3>
+				<div class="pc-container">
+					<label for="pais">Pais</label>
+					<input type="text" id="pais" class="pais" name="pais" /><span>(requerido)</span>
+
+					<label for="codigo">Codigo</label>
+					<input type="text" name="codigo" id="codigo" class="codigo" value="+" /><span>(requerido)</span>
+				</div>
+				<label for="ciudad">Ciudad<span>(requerido)</span></label>
+				<input type="text" class="ciudad" name="ciudad" id="ciudad" />
+
+				<label for="direccion">direccion<span>(requerido)</span></label>
+				<input type="text" name="direccion" id="direccion" class="direccion" />
+
+				<label for="telefono">numero de telefono<span>(requerido)</span></label>
+				<input type="text" name="telefono" id="telefono" />
+
+				<label for="celular">numero de celular<span>(requerido)</span></label>
+				<input type="text" id="celular" name="celular" />
+
+				<label for="emergencyName"> Nombre de contacto por si alguna emergencia<span>(requerido)</span></label>
+				<input type="text" name="emergencyName" class="emergencyName" id="emergencyName" />
+
+				<label for="emergencyPhone">Numero de celular por si alguna emergencia<span>(requerido)</span></label>
+				<input type="text" name="emergencyPhone" id="emergencyPhone" />
+			</div>
+			<div class="errores"></div>
+			<div class="botones">
+				<button type="submit">Enviar</button>
+				<button type="reset">Borrar</button>
+			</div>
+		</form>
+		<script src="index.js"></script>
+	</body>
+</html>

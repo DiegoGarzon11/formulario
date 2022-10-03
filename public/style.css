@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: cascadia code;
+}
+header {
+	height: 10vh;
+	background-color: #06283d;
+	text-align: center;
+}
+header > h1 {
+	text-shadow: black 5px 10px 7px;
+}
+body {
+	background-color: rgba(6, 40, 61, 0.922);
+}
+form {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	flex-direction: column;
+	background-color: #251b37;
+	margin: auto;
+	padding: 30px;
+	border-radius: 50px;
+}
+.infoUser,
+.documento,
+.contacto {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin-bottom: 55px;
+}
+.botones {
+	margin: 20px;
+}
+input,
+select {
+	outline: none;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px black solid;
+	color: rgb(188, 188, 188);
+}
+.seleccionTemporal{
+	display: none;
+}
+button {
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #f96666;
+	cursor: pointer;
+	color: white;
+}
+h3 {
+	text-transform: uppercase;
+	border-bottom: 1px solid rgb(109, 109, 109);
+	width: 100%;
+	margin-bottom: 0px;
+	color: #fbfbfb;
+	text-align: center;
+}
+div {
+	gap: 9px;
+}
+span {
+	padding-left: 10px;
+
+	color: #f57575cc;
+}
+.errores{
+	color: rgb(255, 44, 44);
+}
