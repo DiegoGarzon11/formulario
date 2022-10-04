@@ -51,7 +51,7 @@ const controller = {
 	},
 	api: (req, res) => {
 		if (datosJson.length === 0) {
-			res.send('no existen usuarios en nuestra base de datos');
+			return res.send('no existen usuarios en nuestra base de datos');
 		}
 		let sin = datosJson.filter((e) => {
 			return delete e.contraseña;
@@ -62,10 +62,9 @@ const controller = {
 		for (let i of datosJson) {
 			if (i.id == req.params.id) {
 				return res.json(i);
-			} else if (req.params.id != i.id) {
-				return res.sendStatus(404);
 			}
 		}
+		return res.sendStatus(404)
 	},
 };
 module.exports = controller;
