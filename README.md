@@ -7,7 +7,7 @@
   ## Uso
    1. Para el uso de esta aplicación es necesario que instale las dependencias con **npm  i** o **npm install**
    2. Luego del primer paso realizado, lo segundo será ejecutar el comando **npm start** en la terminal que esté usando
-  ##info extra
+  ## info extra
   Este proyecto cuenta con varias rutas, las cuales tienen su tarea específica
   1. ***http://localhost:3000/*** esta nos mostrará el home de la página, la cual es solamente el formulario
   2. ***http://localhost:3000/api*** esta nos mostrará todos los datos que tenemos almacenados en nuestra base de datos
