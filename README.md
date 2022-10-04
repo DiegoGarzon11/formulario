@@ -1,10 +1,10 @@
 # neezaio-prueba
- ##informacón del proyecto
+ ## informacón del proyecto
   Este proyecto fue realizado por [Diego Garzon](https://diegogarzon.netlify.app/) como prubea tecnica como presentación a Needzaio, el cual consistia eb realizar un formulario de registro con validaciones de formato de datos y duplicidad
- ##herramientas
+ ## herramientas
   este proyecto fue hecho con *javascript*, *nodejs* usando *express* como biblioteca, *html/css*, y  *graphql*, ademas de algunas dependencias que mejoran a este proyecto
  
-  ##Uso
+  ## Uso
    1. para el uso de esta aplicaion es necesario que instale las dependemcias con **npm i** o **npm install**
    2. luego del primer paso realizado, lo segundo sera ejecutar el comnado **npm start** en la terminal que estes usando
   ##info extra
