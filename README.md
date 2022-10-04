@@ -12,5 +12,5 @@
   1. ***http://localhost:3000/*** esta nos mostrará el home de la página, la cual es solamente el formulario
   2. ***http://localhost:3000/api*** esta nos mostrará todos los datos que tenemos almacenados en nuestra base de datos
   3. ***http://localhost:3000/api/:id*** esta nos muestra los datos que queramos ver específicamente, se le pasa un número en: "/:id" y nos mostrara los datos que le pertenecen a ese número
-  4. ***http://localhost:3000/graphql,*** esta nos ayuda a interactuar con la *API* por medio de la interfaz de *GraphQL,* podemos hacer distinto tipo de peticiones
+  4. ***http://localhost:3000/graphql,*** esta nos ayuda a interactuar con la *API* por medio de la interfaz de *GraphQL,* podemos hacer distintos tipos de peticiones
   
