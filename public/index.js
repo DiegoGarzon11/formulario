@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
 	const form = document.querySelector('form');
 	const emailVerified = document.getElementById('emailVerified');
 	const email = document.getElementById('email');
-	
 
 	militar.addEventListener('click', () => {
 		temporalCon.style.display = 'block';
