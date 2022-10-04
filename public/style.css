@@ -5,32 +5,36 @@
 }
 header {
 	height: 10vh;
-	background-color: #06283d;
+
 	text-align: center;
+	margin-bottom: 30px;
 }
 header > h1 {
-	text-shadow: black 5px 10px 7px;
+	color: #d0cab290;
+	text-shadow: 3px 3px 1px rgb(103, 97, 97), 5px 5px 2px rgb(119, 119, 116), 8px 8px 3px rgb(15, 15, 15);
+	font-size: 4rem;
 }
 body {
-	background-color: rgba(6, 40, 61, 0.922);
+	background-color: #d0cab290;
 }
 form {
 	display: flex;
-	width: 80%;
+	width: 60%;
 	align-items: center;
 	flex-direction: column;
-	background-color: #251b37;
+	background-color: #ffe6bf;
 	margin: auto;
 	padding: 30px;
-	border-radius: 50px;
+	border-radius: 30px;
 }
 .infoUser,
 .documento,
 .contacto {
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: #364547;
 	margin-bottom: 55px;
+	width: 80%;
 }
 .botones {
 	margin: 20px;
@@ -40,35 +44,49 @@ select {
 	outline: none;
 	background-color: transparent;
 	border: 0;
-	border-bottom: 1px black solid;
-	color: rgb(188, 188, 188);
+	border-bottom: 1.5px #7d9d9c solid;
+	color: #694e4e;
 }
-.seleccionTemporal{
+.seleccionTemporal {
 	display: none;
 }
 button {
 	padding: 10px;
 	border-radius: 20px;
-	background-color: #f96666;
+	background-color: #354259;
 	cursor: pointer;
 	color: white;
+	border: none;
+}
+button:hover {
+	transform: scale(1.1);
 }
 h3 {
 	text-transform: uppercase;
 	border-bottom: 1px solid rgb(109, 109, 109);
 	width: 100%;
 	margin-bottom: 0px;
-	color: #fbfbfb;
+	color: #354259;
 	text-align: center;
 }
 div {
-	gap: 9px;
+	gap: 10px;
 }
 span {
 	padding-left: 10px;
-
-	color: #f57575cc;
+	color: #6d8299;
 }
-.errores{
+.errores {
 	color: rgb(255, 44, 44);
+}
+::-webkit-scrollbar {
+	background-color: #7d9d9c;
+	width: 10px;
+}
+::-webkit-scrollbar-button {
+	background-color: grey;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #354259;
+	border-radius: 15px;
 }

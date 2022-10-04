@@ -12,6 +12,7 @@ window.addEventListener('load', () => {
 	const form = document.querySelector('form');
 	const emailVerified = document.getElementById('emailVerified');
 	const email = document.getElementById('email');
+	let inputs = document.querySelectorAll('input');
 
 	militar.addEventListener('click', () => {
 		temporalCon.style.display = 'block';
@@ -21,7 +22,7 @@ window.addEventListener('load', () => {
 	});
 
 	form.addEventListener('submit', (event) => {
-		document.querySelectorAll('input').forEach((el) => {
+		inputs.forEach((el) => {
 			if (el.value == '') {
 				errores.innerText = 'hay errores en el formulario, por favor completarlos correctamente';
 				event.preventDefault();
@@ -50,7 +51,7 @@ window.addEventListener('load', () => {
 			event.preventDefault();
 			errores.innerText = 'Por favor completar el formulario de manera correcta';
 		}
-	});
 
-	errosLista.innerText = '';
+		errosLista.innerText = '';
+	});
 });

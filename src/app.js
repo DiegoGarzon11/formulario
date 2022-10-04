@@ -8,7 +8,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use(express.json());
 
-
 app.use('/', rutes);
 app.use('/graphql', metodo);
 app.listen(3000, () => {

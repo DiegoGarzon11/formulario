@@ -9,9 +9,8 @@
 	</head>
 	<body>
 		<header><h1>formulario de registro</h1></header>
-		<form class="formulario" action="/add" method="POST" >
-			<h2 style="color: rgb(190, 23, 23) ;">Tener en cuenta que todos los campos son requeridos</h2>
-			<br>
+		<form class="formulario" action="/add" method="POST">
+			<br />
 			<div class="infoUser">
 				<h3>informacion usuario</h3>
 				<label for="apellido">Apellido<span>(requerido)</span></label>
@@ -24,23 +23,23 @@
 				<input type="password" class="contraseña" id="contraseña" name="contraseña" />
 
 				<label for="email">correo<span>(requerido)</span></label>
-				<input type="email" name="email" id="email" class="email" />
+				<input type="email" name="email" id="email" class="email" placeholder="pepito132@hotmail.com" />
 
 				<label for="emailVerified">repetir correo<span>(requerido)</span></label>
 				<input type="email" class="emailVerified" id="emailVerified" name="emailVerified" />
 
 				<h4>¿Es usted militar? <span>(requerido)</span></h4>
 				<div class="seleccionMilitar">
-					<label style="color: rgb(188, 188, 188)" for="militar">Si</label>
+					<label style="color: #364547" for="militar">Si</label>
 					<input type="radio" name="militar" id="militar" value="si" />
-					<label style="color: rgb(188, 188, 188)" for="NoMilitar">No</label>
+					<label style="color: #364547" for="NoMilitar">No</label>
 					<input type="radio" name="militar" id="NoMilitar" value="no" />
 				</div>
 				<div class="seleccionTemporal">
 					<h4>En caso de usted ser militar, ¿Es usted temporal?<span>(requerido)</span></h4>
-					<label style="color: rgb(188, 188, 188)" for="temporal">Si</label>
+					<label style="color: #364547" for="temporal">Si</label>
 					<input type="radio" name="temporal" id="SiTemporal" value="si" />
-					<label style="color: rgb(188, 188, 188)" for="noTemporal">No</label>
+					<label style="color: #364547" for="noTemporal">No</label>
 					<input type="radio" name="temporal" id="NoTemporal" value="no" />
 				</div>
 			</div>
@@ -70,7 +69,7 @@
 					<input type="text" id="pais" class="pais" name="pais" /><span>(requerido)</span>
 
 					<label for="codigo">Codigo</label>
-					<input type="text" name="codigo" id="codigo" class="codigo" value="+" /><span>(requerido)</span>
+					<input type="text" name="codigo" id="codigo" class="codigo" placeholder="Ej: +57" /><span>(requerido)</span>
 				</div>
 				<label for="ciudad">Ciudad<span>(requerido)</span></label>
 				<input type="text" class="ciudad" name="ciudad" id="ciudad" />
