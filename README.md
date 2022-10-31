@@ -1,6 +1,6 @@
 # Needzaio-prueba
  ## información del proyecto
-  Este proyecto fue realizado por [Diego Garzon](https://diegogarzon.netlify.app/) Como prueba técnica como presentación a Needzaio, el cual consistía en realizar un formulario de registro con validaciones de formato de datos y duplicidad.
+  Este proyecto fue realizado por [Diego Garzon](https://diegogarzon.netlify.app/) 
  ## herramientas
   Este proyecto fue hecho con *JavaScript*, *Node.js,* usando *Express* como biblioteca, *HTML/CSS*, y  *GraphQL*, además de algunas dependencias que mejoran a este proyecto.
  
