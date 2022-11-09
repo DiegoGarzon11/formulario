@@ -1,4 +1,4 @@
-# Needzaio-prueba
+# Formulario
  ## información del proyecto
   Este proyecto fue realizado por [Diego Garzon](https://diegogarzon.netlify.app/) 
  ## herramientas
